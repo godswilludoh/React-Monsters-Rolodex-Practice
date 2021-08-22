@@ -10,7 +10,7 @@ class App extends Component{
 
     this.state = {
       monsters: [],
-      searchField: ''
+      searchField: '' 
     };
   }
 
@@ -26,8 +26,9 @@ class App extends Component{
 
   render(){
       const { monsters, searchField } = this.state;
-       const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField)
-        );
+       const filteredMonsters = monsters.filter(monster => 
+        monster.name.toLowerCase().includes(searchField)
+        ); 
 
       return (
         <div className='App'>
